@@ -144,7 +144,7 @@ typical word processor."
          :empty-lines 1)
         ("j" "Journal Entry"
          entry (file+datetree org-agenda-file-journal)
-         "* %?"
+         "* %?:Journal:\n %i\n %U"
          :empty-lines 1)))
 
 
@@ -227,6 +227,9 @@ typical word processor."
         org-agenda-custom-commands
         `(("N" "Notes" tags "NOTE"
            ((org-agenda-overriding-header "Notes")
+            (org-tags-match-list-sublevels t)))
+          ("j" "Journal" tags "Journal"
+           ((org-agenda-overriding-header "Journal")
             (org-tags-match-list-sublevels t)))
           ("g" "GTD"
            ((agenda "" nil)
