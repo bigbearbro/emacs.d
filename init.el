@@ -12,6 +12,7 @@
 (electric-indent-mode -1)
 ;;禁止 Emacs 自动生成备份文件
 (setq make-backup-files nil)
+
 ;;开启默认全屏
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
 ;; -*- lexical-binding: t -*-
@@ -141,6 +142,7 @@
 
 (require 'init-folding)
 (require 'init-dash)
+;;(require 'init-solidity)
 
 ;;(require 'init-twitter)
 ;; (require 'init-mu)
